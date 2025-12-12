@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.db
+    container_name: my_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  pinger:
+    build: .
+    container_name: lr2
+    env_file: .env
+    volumes:
+      - ./logs:/logs
+    depends_on:
+      - db
+
+volumes:
+  db_data:

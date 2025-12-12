@@ -1,0 +1,112 @@
+[2025-12-12 20:13:03] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-12-12 20:13:03] [INFO] Retrying...
+[2025-12-12 20:15:06] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: ВАЖНО:  пользователь "dbuser" не прошёл проверку подлинности (по паролю)
+
+[2025-12-12 20:15:06] [INFO] Retrying...
+[2025-12-12 20:15:47] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: ВАЖНО:  пользователь "dbuser" не прошёл проверку подлинности (по паролю)
+
+[2025-12-12 20:15:47] [INFO] Retrying...
+[2025-12-12 20:19:48] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: ВАЖНО:  пользователь "dbuser" не прошёл проверку подлинности (по паролю)
+
+[2025-12-12 20:19:48] [INFO] Retrying...
+[2025-12-12 20:20:50] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: ВАЖНО:  пользователь "user" не прошёл проверку подлинности (по паролю)
+
+[2025-12-12 20:20:50] [INFO] Retrying...
+[2025-12-12 20:26:19] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-12-12 20:26:19] [INFO] Retrying...
+[2025-12-12 20:26:52] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: ВАЖНО:  пользователь "user" не прошёл проверку подлинности (по паролю)
+
+[2025-12-12 20:26:52] [INFO] Retrying...
+[2025-12-12 20:29:25] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-12-12 20:29:25] [INFO] Retrying...
+[2025-12-12 20:30:07] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-12-12 20:30:07] [INFO] Retrying...
+[2025-12-12 20:31:05] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-12-12 20:31:05] [INFO] Retrying...
+[2025-12-12 20:31:56] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 20:36:56] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 20:41:56] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 20:46:56] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 20:49:47] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-12-12 20:49:47] [INFO] Retrying...
+[2025-12-12 20:50:18] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 20:55:18] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:04:11] [ERROR] connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-12-12 21:04:11] [INFO] Retrying...
+[2025-12-12 21:04:29] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:07:29] [ERROR] connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-12-12 21:07:29] [INFO] Retrying...
+[2025-12-12 21:07:31] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:07:33] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:07:35] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:07:37] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:07:39] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:07:41] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:07:43] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:07:45] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:07:47] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:07:50] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:07:52] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+[2025-12-12 21:08:27] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:27] [INFO] Retrying...
+[2025-12-12 21:08:29] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:29] [INFO] Retrying...
+[2025-12-12 21:08:31] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:31] [INFO] Retrying...
+[2025-12-12 21:08:34] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:34] [INFO] Retrying...
+[2025-12-12 21:08:36] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:36] [INFO] Retrying...
+[2025-12-12 21:08:38] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:38] [INFO] Retrying...
+[2025-12-12 21:08:40] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:40] [INFO] Retrying...
+[2025-12-12 21:08:42] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:42] [INFO] Retrying...
+[2025-12-12 21:08:44] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:44] [INFO] Retrying...
+[2025-12-12 21:08:46] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:46] [INFO] Retrying...
+[2025-12-12 21:08:48] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:48] [INFO] Retrying...
+[2025-12-12 21:08:50] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:50] [INFO] Retrying...
+[2025-12-12 21:08:52] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:52] [INFO] Retrying...
+[2025-12-12 21:08:54] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+
+[2025-12-12 21:08:54] [INFO] Retrying...
+[2025-12-12 21:09:13] [ERROR] connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2025-12-12 21:09:13] [INFO] Retrying...
+[2025-12-12 21:14:13] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
