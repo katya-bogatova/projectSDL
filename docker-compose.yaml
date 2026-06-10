@@ -1,29 +1,32 @@
 version: "3.9"
 
 services:
-  db:
+  db3:
     build:
       context: .
-      dockerfile: Dockerfile.db
-    container_name: my_postgres
+      dockerfile: Dockerfile.db  
+    container_name: my_postgres3
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: db3          
     ports:
-      - "5432:5432"
+      - "5433:5432"             
     volumes:
-      - db_data:/var/lib/postgresql/data
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - db3_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  
 
-  pinger:
+  app3:
     build: .
-    container_name: lr2
-    env_file: .env
+    container_name: lr3
+    env_file: .env              
     volumes:
       - ./logs:/logs
     depends_on:
-      - db
+      - db3
+    logging:
+      driver: "none"
 
 volumes:
-  db_data:
+  db3_data:

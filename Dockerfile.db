@@ -7,3 +7,4 @@ RUN apt-get update && apt-get install -y locales \
 ENV LANG=ru_RU.UTF-8
 ENV LANGUAGE=ru_RU:ru
 ENV LC_ALL=ru_RU.UTF-8
+COPY init.sql /docker-entrypoint-initdb.d/
