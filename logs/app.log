@@ -1,112 +1,755 @@
-[2025-12-12 20:13:03] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
-	Is the server running on that host and accepting TCP/IP connections?
+Приложение запущено без интерактивной консоли
+Ошибка подключения к базе данных
+Подключение к БД успешно
 
-[2025-12-12 20:13:03] [INFO] Retrying...
-[2025-12-12 20:15:06] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: ВАЖНО:  пользователь "dbuser" не прошёл проверку подлинности (по паролю)
+Доступные таблицы: users, orders, order_items, products
 
-[2025-12-12 20:15:06] [INFO] Retrying...
-[2025-12-12 20:15:47] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: ВАЖНО:  пользователь "dbuser" не прошёл проверку подлинности (по паролю)
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
 
-[2025-12-12 20:15:47] [INFO] Retrying...
-[2025-12-12 20:19:48] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: ВАЖНО:  пользователь "dbuser" не прошёл проверку подлинности (по паролю)
+1 | Katya | katya@example.com | 25 | Amsterdam
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
 
-[2025-12-12 20:19:48] [INFO] Retrying...
-[2025-12-12 20:20:50] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: ВАЖНО:  пользователь "user" не прошёл проверку подлинности (по паролю)
+Доступные таблицы: users, orders, order_items, products
 
-[2025-12-12 20:20:50] [INFO] Retrying...
-[2025-12-12 20:26:19] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
-	Is the server running on that host and accepting TCP/IP connections?
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
 
-[2025-12-12 20:26:19] [INFO] Retrying...
-[2025-12-12 20:26:52] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: ВАЖНО:  пользователь "user" не прошёл проверку подлинности (по паролю)
+Неверный логин или пароль
+Подключение к БД успешно
 
-[2025-12-12 20:26:52] [INFO] Retrying...
-[2025-12-12 20:29:25] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
-	Is the server running on that host and accepting TCP/IP connections?
+Доступные таблицы: users, orders, order_items, products
 
-[2025-12-12 20:29:25] [INFO] Retrying...
-[2025-12-12 20:30:07] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
-	Is the server running on that host and accepting TCP/IP connections?
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
 
-[2025-12-12 20:30:07] [INFO] Retrying...
-[2025-12-12 20:31:05] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
-	Is the server running on that host and accepting TCP/IP connections?
+1 | Katya | katya@example.com | 25 | Amsterdam
 
-[2025-12-12 20:31:05] [INFO] Retrying...
-[2025-12-12 20:31:56] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 20:36:56] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 20:41:56] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 20:46:56] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 20:49:47] [ERROR] Connection failed: connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
-	Is the server running on that host and accepting TCP/IP connections?
+Доступные таблицы: users, orders, order_items, products
 
-[2025-12-12 20:49:47] [INFO] Retrying...
-[2025-12-12 20:50:18] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 20:55:18] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:04:11] [ERROR] connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
-	Is the server running on that host and accepting TCP/IP connections?
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
 
-[2025-12-12 21:04:11] [INFO] Retrying...
-[2025-12-12 21:04:29] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:07:29] [ERROR] connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
-	Is the server running on that host and accepting TCP/IP connections?
+Обновлено строк: 1
 
-[2025-12-12 21:07:29] [INFO] Retrying...
-[2025-12-12 21:07:31] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:07:33] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:07:35] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:07:37] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:07:39] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:07:41] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:07:43] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:07:45] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:07:47] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:07:50] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:07:52] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
-[2025-12-12 21:08:27] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+Доступные таблицы: users, orders, order_items, products
 
-[2025-12-12 21:08:27] [INFO] Retrying...
-[2025-12-12 21:08:29] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
 
-[2025-12-12 21:08:29] [INFO] Retrying...
-[2025-12-12 21:08:31] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+1 | Katya | katya@example.com | 25 | Rotterdam
 
-[2025-12-12 21:08:31] [INFO] Retrying...
-[2025-12-12 21:08:34] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+Доступные таблицы: users, orders, order_items, products
 
-[2025-12-12 21:08:34] [INFO] Retrying...
-[2025-12-12 21:08:36] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
 
-[2025-12-12 21:08:36] [INFO] Retrying...
-[2025-12-12 21:08:38] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+Добавлено строк: 1
 
-[2025-12-12 21:08:38] [INFO] Retrying...
-[2025-12-12 21:08:40] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+Доступные таблицы: users, orders, order_items, products
 
-[2025-12-12 21:08:40] [INFO] Retrying...
-[2025-12-12 21:08:42] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
 
-[2025-12-12 21:08:42] [INFO] Retrying...
-[2025-12-12 21:08:44] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+Неверный выбор
 
-[2025-12-12 21:08:44] [INFO] Retrying...
-[2025-12-12 21:08:46] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+Доступные таблицы: users, orders, order_items, products
 
-[2025-12-12 21:08:46] [INFO] Retrying...
-[2025-12-12 21:08:48] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
 
-[2025-12-12 21:08:48] [INFO] Retrying...
-[2025-12-12 21:08:50] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+1 | Katya | katya@example.com | 25 | Rotterdam
+34 | test | test | 10 | test
 
-[2025-12-12 21:08:50] [INFO] Retrying...
-[2025-12-12 21:08:52] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+Доступные таблицы: users, orders, order_items, products
 
-[2025-12-12 21:08:52] [INFO] Retrying...
-[2025-12-12 21:08:54] [ERROR] could not translate host name "db" to address: Temporary failure in name resolution
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
 
-[2025-12-12 21:08:54] [INFO] Retrying...
-[2025-12-12 21:09:13] [ERROR] connection to server at "db" (172.19.0.2), port 5432 failed: Connection refused
-	Is the server running on that host and accepting TCP/IP connections?
+Подключение к БД успешно
 
-[2025-12-12 21:09:13] [INFO] Retrying...
-[2025-12-12 21:14:13] [OK] PostgreSQL version: PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
+
+1 | Katya | katya@example.com | 25 | Amsterdam
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
+
+Добавлено строк: 1
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
+
+1 | Katya | katya@example.com | 25 | Amsterdam
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+9 | test | test | 10 | test
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
+
+
+Товар #1
+
+Товар #2
+Заказ создан, id=9
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
+
+1 | 1 | 2026-06-01
+2 | 2 | 2026-06-02
+3 | 3 | 2026-06-03
+4 | 4 | 2026-06-04
+5 | 5 | 2026-06-05
+6 | 6 | 2026-06-06
+7 | 7 | 2026-06-07
+8 | 8 | 2026-06-08
+9 | 1 | 2026-06-10
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
+
+1 | 1 | 1 | 2 | 500
+2 | 1 | 4 | 1 | 150
+3 | 2 | 2 | 1 | 1500
+4 | 2 | 5 | 2 | 250
+5 | 3 | 3 | 1 | 800
+6 | 3 | 1 | 1 | 500
+7 | 4 | 4 | 3 | 150
+8 | 5 | 2 | 2 | 1500
+9 | 5 | 5 | 1 | 250
+10 | 6 | 6 | 2 | 80
+11 | 6 | 7 | 1 | 120
+12 | 7 | 8 | 3 | 25
+13 | 8 | 1 | 1 | 500
+14 | 8 | 3 | 2 | 800
+15 | 9 | 1 | 2 | 500
+16 | 9 | 2 | 1 | 1500
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
+
+Добавлено строк: 3
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
+
+1 | Katya | katya@example.com | 25 | Amsterdam
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+9 | test | test | 10 | test
+10 | lol | kek | 15 | lolo
+11 | wow | lala | 102 | dkls
+12 | pepe | popo | 102 | pepep
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. INSERT в таблицу
+4. INSERT заказ
+5. UPDATE записи
+0. Выход
+
+Приложение запущено без интерактивной консоли
+Ошибка подключения к базе данных
+Подключение к БД успешно
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+1 | Katya | katya@example.com | 25 | Amsterdam
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+Ошибка выполнения SELECT WHERE
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+2 | Anna | anna@example.com | 22 | Rotterdam
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+2 | Anna | anna@example.com | 22 | Rotterdam
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+1 | Katya | katya@example.com | 25 | Amsterdam
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+Обновлено строк: 1
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+2 | Anna | anna@example.com | 22 | Rotterdam
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+1 | Katya | katya@example.com | 25 | Amsterdam
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+Обновлено строк: 1
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+1 | Katya | katya@example.com | 25 | Rotterdam
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+2 | Anna | anna@example.com | 22 | Rotterdam
+1 | Katya | katya@example.com | 25 | Rotterdam
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT ALL
+2. SELECT WHERE
+3. SELECT WHERE (несколько условий)
+4. INSERT в таблицу
+5. INSERT заказ
+6. UPDATE запись
+7. UPDATE несколько записей
+0. Выход
+
+Неверный логин или пароль
+Подключение к БД успешно
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+Ошибка выполнения SELECT
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+1 | Katya | katya@example.com | 25 | Amsterdam
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+Ошибка подключения к базе данных
+Подключение к БД успешно
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+Неверный выбор
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+1 | Katya | katya@example.com | 25 | Amsterdam
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+2 | Anna | anna@example.com | 22 | Rotterdam
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+2 | Anna | anna@example.com | 22 | Rotterdam
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+Обновлено строк: 1
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+2 | Anna | anna@example.com | 22 | Rotterdam
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Haarlem
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+1 | Katya | katya@example.com | 25 | Rotterdam
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+2 | Anna | anna@example.com | 22 | Rotterdam
+1 | Katya | katya@example.com | 25 | Rotterdam
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+2 | Anna | anna@example.com | 22 | Rotterdam
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+Неверный выбор
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+Ошибка обновления
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+Ошибка выполнения SELECT
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+Обновлено строк: 3
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+5 | Olga | olga@example.com | 35 | Groningen
+6 | Peter | peter@example.com | 27 | Eindhoven
+7 | Lena | lena@example.com | 24 | Leiden
+8 | John | john@example.com | 32 | Maastricht
+1 | Katya | katya@example.com | 25 | Rotterdam
+2 | Anna | anna@example.com | 22 | Utrecht
+3 | Maria | maria@example.com | 30 | Utrecht
+4 | Ivan | ivan@example.com | 28 | Utrecht
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+Добавлено строк: 1
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+
+Товар #1
+
+Товар #2
+Заказ создан, id=9
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+1 | 1 | 1 | 2 | 500
+2 | 1 | 4 | 1 | 150
+3 | 2 | 2 | 1 | 1500
+4 | 2 | 5 | 2 | 250
+5 | 3 | 3 | 1 | 800
+6 | 3 | 1 | 1 | 500
+7 | 4 | 4 | 3 | 150
+8 | 5 | 2 | 2 | 1500
+9 | 5 | 5 | 1 | 250
+10 | 6 | 6 | 2 | 80
+11 | 6 | 7 | 1 | 120
+12 | 7 | 8 | 3 | 25
+13 | 8 | 1 | 1 | 500
+14 | 8 | 3 | 2 | 800
+15 | 9 | 1 | 2 | 500
+16 | 9 | 2 | 1 | 1500
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+Добавлено строк: 3
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
+1 | Phone | 500 | Electronics | 50
+2 | Laptop | 1500 | Electronics | 20
+3 | Tablet | 800 | Electronics | 30
+4 | Headphones | 150 | Electronics | 100
+5 | Smartwatch | 250 | Electronics | 75
+6 | Backpack | 80 | Accessories | 200
+7 | Shoes | 120 | Clothing | 150
+8 | T-shirt | 25 | Clothing | 300
+9 | test1 | 100 | t | 5
+10 | test2 | 200 | p | 2
+11 | test3 | 300 | r | 3
+
+Доступные таблицы: users, orders, order_items, products
+
+1. SELECT
+2. INSERT в таблицу
+3. INSERT заказ
+4. UPDATE
+0. Выход
+
