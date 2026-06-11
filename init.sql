@@ -35,10 +35,10 @@ CREATE TABLE order_items (
 
 -- Тесты
 INSERT INTO users (name, email, age, city) VALUES
-('Katya', 'katya@example.com', 25, 'Amsterdam'),
+('Katya', 'katya@example.com', 25, 'Rotterdam'),
 ('Anna', 'anna@example.com', 22, 'Rotterdam'),
 ('Maria', 'maria@example.com', 30, 'Utrecht'),
-('Ivan', 'ivan@example.com', 28, 'Haarlem'),
+('Ivan', 'ivan@example.com', 28, 'Rotterdam'),
 ('Olga', 'olga@example.com', 35, 'Groningen'),
 ('Peter', 'peter@example.com', 27, 'Eindhoven'),
 ('Lena', 'lena@example.com', 24, 'Leiden'),
@@ -94,4 +94,4 @@ CREATE USER app_user WITH PASSWORD '1234';
 GRANT CONNECT ON DATABASE db3 TO app_user;
 GRANT USAGE ON SCHEMA public TO app_user;
 GRANT SELECT, INSERT, UPDATE ON ALL TABLES IN SCHEMA public TO app_user;
-GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO app_user;0
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO app_user;
