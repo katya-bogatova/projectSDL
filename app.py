@@ -14,7 +14,6 @@ if not DB_NAME:
     raise Exception("DB_NAME is not set in environment")
 
 def log_message(message, error=False):
-    """Вывод в stdout/stderr и дублирование в LOG_FILE"""
     if error:
         print(message, file=sys.stderr)
     else:
@@ -27,7 +26,6 @@ def log_message(message, error=False):
             pass
 
 def safe_name(name: str):
-    """Проверка названия таблицы или колонки"""
     if not re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', name):
         raise ValueError("Bad identifier")
     return name
@@ -46,22 +44,13 @@ def connect_db():
         log_message("Подключение к БД успешно")
         return conn
     except psycopg2.OperationalError:
-        log_message(
-            "Неверный логин или пароль",
-            error=True
-        )
+        log_message("Неверный логин или пароль", error=True)
         sys.exit(1)
     except EOFError:
-        log_message(
-            "Приложение запущено без интерактивной консоли",
-            error=True
-        )
+        log_message("Приложение запущено без интерактивной консоли", error=True)
         sys.exit(1)
     except Exception:
-        log_message(
-            "Ошибка подключения к базе данных",
-            error=True
-        )
+        log_message("Ошибка подключения к базе данных", error=True)
         sys.exit(1)
 
 def get_tables(conn):
@@ -72,11 +61,7 @@ def get_tables(conn):
 def select_records(conn):
     try:
         table = safe_name(input("Таблица: "))
-        count = int(
-            input(
-                "Сколько условий фильтрации (0 для всех записей): "
-            )
-        )
+        count = int(input("Сколько условий фильтрации (0 для всех записей): "))
         with conn.cursor() as cur:
             if count == 0:
                 query = sql.SQL(
@@ -116,10 +101,7 @@ def select_records(conn):
                     " | ".join(map(str, row))
                 )
     except Exception:
-        log_message(
-            "Ошибка выполнения SELECT",
-            error=True
-        )
+        log_message("Ошибка выполнения SELECT", error=True)
         conn.rollback()
 
 def insert_into_table(conn):
@@ -192,21 +174,11 @@ def insert_order(conn):
 
 def update_records(conn):
     try:
-        table = safe_name(
-            input("Таблица: ")
-        )
-        update_column = safe_name(
-            input("Обновляемая колонка: ")
-        )
-        update_value = input(
-            "Новое значение: "
-        )
-        where_column = safe_name(
-            input("Колонка фильтра: ")
-        )
-        values = input(
-            "Значения через запятую: "
-        )
+        table = safe_name(input("Таблица: "))
+        update_column = safe_name(input("Обновляемая колонка: "))
+        update_value = input("Новое значение: ")
+        where_column = safe_name(input("Колонка фильтра: "))
+        values = input("Значения через запятую: ")
         values_list = [
             v.strip()
             for v in values.split(",")
@@ -230,19 +202,12 @@ def update_records(conn):
                 [update_value] + values_list
             )
             if cur.rowcount:
-                log_message(
-                    f"Обновлено строк: {cur.rowcount}"
-                )
+                log_message(f"Обновлено строк: {cur.rowcount}")
             else:
-                log_message(
-                    "Подходящие записи не найдены"
-                )
+                log_message("Подходящие записи не найдены")
         conn.commit()
     except Exception:
-        log_message(
-            "Ошибка обновления",
-            error=True
-        )
+        log_message("Ошибка обновления", error=True)
         conn.rollback()
         
 def interactive_menu(conn):
@@ -268,10 +233,7 @@ def interactive_menu(conn):
         elif choice == "4":
             update_records(conn)
         else:
-            log_message(
-                "Неверный выбор",
-                error=True
-            )
+            log_message("Неверный выбор", error=True)
 
 if __name__ == "__main__":
     conn = connect_db()
