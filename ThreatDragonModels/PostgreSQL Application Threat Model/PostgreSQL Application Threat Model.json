@@ -51,6 +51,13 @@
                 "df78bd66-f04b-4850-b47d-06a2cfa25b0d",
                 "b336bf88-d9b1-45f2-bb73-cf316ac7731e"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -288,13 +295,6 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -423,8 +423,8 @@
           },
           {
             "position": {
-              "x": 720,
-              "y": 180
+              "x": 750,
+              "y": 170
             },
             "size": {
               "width": 120,
@@ -1010,11 +1010,7 @@
                 "y": 290
               },
               {
-                "x": 760,
-                "y": 320
-              },
-              {
-                "x": 780,
+                "x": 750,
                 "y": 250
               }
             ]
