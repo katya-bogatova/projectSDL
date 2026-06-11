@@ -19,12 +19,12 @@
         "cells": [
           {
             "position": {
-              "x": 369.99999999999955,
-              "y": 70.0000000000004
+              "x": 360,
+              "y": 100
             },
             "size": {
-              "width": 650,
-              "height": 690
+              "width": 540,
+              "height": 600
             },
             "attrs": {
               "label": {
@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "c66f9a73-6fb5-4ca0-9f59-9b99e0aa76e7",
             "zIndex": -1,
+            "id": "c66f9a73-6fb5-4ca0-9f59-9b99e0aa76e7",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Docker Container",
@@ -42,14 +42,14 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
+                "8933ad80-572b-45bd-8343-d82144ae6db2",
                 "fc1d4de2-eab4-40d0-afc2-b41b3cea1732",
                 "7972b1f0-9678-4375-8fd4-be73d15980df"
               ],
               "containedElements": [
                 "2f7c7e6e-f62d-4079-a0ab-ca389acf8869",
                 "df78bd66-f04b-4850-b47d-06a2cfa25b0d",
-                "b336bf88-d9b1-45f2-bb73-cf316ac7731e",
-                "25d1e1f8-6228-4e03-bc36-761dc2e7673e"
+                "b336bf88-d9b1-45f2-bb73-cf316ac7731e"
               ]
             }
           },
@@ -74,6 +74,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -157,7 +158,6 @@
               ]
             },
             "id": "659fa2a0-4daa-43cf-86c7-09166d015948",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -191,6 +191,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -274,7 +275,6 @@
               ]
             },
             "id": "2f7c7e6e-f62d-4079-a0ab-ca389acf8869",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Python App",
@@ -288,6 +288,13 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -296,8 +303,8 @@
               "y": 530
             },
             "size": {
-              "width": 120,
-              "height": 60
+              "width": 150,
+              "height": 70
             },
             "attrs": {
               "text": {
@@ -314,6 +321,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -397,7 +405,6 @@
               ]
             },
             "id": "df78bd66-f04b-4850-b47d-06a2cfa25b0d",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "PostgreSQL Database",
@@ -416,8 +423,8 @@
           },
           {
             "position": {
-              "x": 850,
-              "y": 170
+              "x": 720,
+              "y": 180
             },
             "size": {
               "width": 120,
@@ -438,6 +445,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -521,7 +529,6 @@
               ]
             },
             "id": "b336bf88-d9b1-45f2-bb73-cf316ac7731e",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Application Log",
@@ -540,8 +547,8 @@
           },
           {
             "position": {
-              "x": 555,
-              "y": 660
+              "x": 570,
+              "y": 730
             },
             "size": {
               "width": 120,
@@ -562,6 +569,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -645,7 +653,6 @@
               ]
             },
             "id": "25d1e1f8-6228-4e03-bc36-761dc2e7673e",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Docker Volume",
@@ -693,7 +700,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "c66f9a73-6fb5-4ca0-9f59-9b99e0aa76e7"
+              ]
             },
             "labels": [
               "Database Files"
@@ -707,57 +716,10 @@
               "cell": "25d1e1f8-6228-4e03-bc36-761dc2e7673e",
               "port": "6df1948c-2889-449b-82c2-e49cfe77ac68"
             },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Log Messages",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Log Messages"
-            ],
-            "id": "2418adf1-a2bd-446c-b92a-c24bcb07b4dd",
-            "source": {
-              "cell": "2f7c7e6e-f62d-4079-a0ab-ca389acf8869",
-              "port": "c5154968-d800-4367-9860-2c84512bc5cd"
-            },
-            "target": {
-              "cell": "b336bf88-d9b1-45f2-bb73-cf316ac7731e",
-              "port": "95c881ef-265f-45d7-86b2-89ae9604bc3f"
-            },
             "vertices": [
               {
-                "x": 780,
-                "y": 250
+                "x": 630,
+                "y": 630
               }
             ]
           },
@@ -807,6 +769,10 @@
               "port": "95c881ef-265f-45d7-86b2-89ae9604bc3f"
             },
             "vertices": [
+              {
+                "x": 500,
+                "y": 460
+              },
               {
                 "x": 480,
                 "y": 470
@@ -922,7 +888,15 @@
             },
             "vertices": [
               {
+                "x": 290,
+                "y": 310
+              },
+              {
                 "x": 350,
+                "y": 350
+              },
+              {
+                "x": 410,
                 "y": 350
               }
             ]
@@ -978,6 +952,70 @@
               {
                 "x": 440,
                 "y": 190
+              },
+              {
+                "x": 380,
+                "y": 190
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Log Messages",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Log Messages"
+            ],
+            "id": "2418adf1-a2bd-446c-b92a-c24bcb07b4dd",
+            "source": {
+              "cell": "2f7c7e6e-f62d-4079-a0ab-ca389acf8869",
+              "port": "c5154968-d800-4367-9860-2c84512bc5cd"
+            },
+            "target": {
+              "cell": "b336bf88-d9b1-45f2-bb73-cf316ac7731e",
+              "port": "95c881ef-265f-45d7-86b2-89ae9604bc3f"
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 290
+              },
+              {
+                "x": 760,
+                "y": 320
+              },
+              {
+                "x": 780,
+                "y": 250
               }
             ]
           }
