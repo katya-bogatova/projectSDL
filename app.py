@@ -5,7 +5,6 @@ from psycopg2 import sql
 import re
 from getpass import getpass
 
-# ---------------- ENV CONFIG ----------------
 DB_HOST = os.getenv("DB_HOST", "db3")
 DB_PORT = os.getenv("DB_PORT", "5432")
 DB_NAME = os.getenv("DB_NAME", "db3")
@@ -14,7 +13,6 @@ LOG_FILE = os.getenv("LOG_FILE")
 if not DB_NAME:
     raise Exception("DB_NAME is not set in environment")
 
-# ---------------- LOGGING ----------------
 def log_message(message, error=False):
     """Вывод в stdout/stderr и дублирование в LOG_FILE"""
     if error:
@@ -28,14 +26,12 @@ def log_message(message, error=False):
         except Exception:
             pass
 
-# ---------------- SECURITY ----------------
 def safe_name(name: str):
     """Проверка названия таблицы или колонки"""
     if not re.match(r'^[a-zA-Z_][a-zA-Z0-9_]*$', name):
         raise ValueError("Bad identifier")
     return name
 
-# ---------------- CONNECT ----------------
 def connect_db():
     try:
         user = input("Логин: ").strip()
@@ -68,13 +64,11 @@ def connect_db():
         )
         sys.exit(1)
 
-# ---------------- TABLES ----------------
 def get_tables(conn):
     with conn.cursor() as cur:
         cur.execute("SELECT table_name FROM information_schema.tables WHERE table_schema='public'")
         return [r[0] for r in cur.fetchall()]
 
-# ---------------- SELECT ----------------
 def select_records(conn):
     try:
         table = safe_name(input("Таблица: "))
@@ -128,7 +122,6 @@ def select_records(conn):
         )
         conn.rollback()
 
-# ---------------- UNIVERSAL INSERT ----------------
 def insert_into_table(conn):
     try:
         table_name = safe_name(input("Таблица: "))
@@ -166,7 +159,6 @@ def insert_into_table(conn):
         log_message("Ошибка вставки данных", error=True)
         conn.rollback()
 
-# ---------------- INSERT ORDER ----------------
 def insert_order(conn):
     try:
         user_id = int(input("ID пользователя: "))
@@ -198,7 +190,6 @@ def insert_order(conn):
         log_message("Ошибка создания заказа", error=True)
         conn.rollback()
 
-# ---------------- UPDATE ----------------
 def update_records(conn):
     try:
         table = safe_name(
@@ -254,49 +245,6 @@ def update_records(conn):
         )
         conn.rollback()
         
-def update_multiple_records(conn):
-    try:
-        table = safe_name(input("Таблица: "))
-        update_column = safe_name(input("Обновляемая колонка: "))
-        update_value = input("Новое значение: ")
-        where_column = safe_name(input("Колонка фильтра: "))
-        values = input(
-            "Значения через запятую: "
-        )
-        values_list = [
-            v.strip()
-            for v in values.split(",")
-        ]
-        placeholders = sql.SQL(", ").join(
-            [sql.Placeholder()] * len(values_list)
-        )
-        query = sql.SQL("""
-            UPDATE {}
-            SET {} = %s
-            WHERE {} IN ({})
-        """).format(
-            sql.Identifier(table),
-            sql.Identifier(update_column),
-            sql.Identifier(where_column),
-            placeholders
-        )
-        with conn.cursor() as cur:
-            cur.execute(
-                query,
-                [update_value] + values_list
-            )
-            log_message(
-                f"Обновлено строк: {cur.rowcount}"
-            )
-        conn.commit()
-    except Exception:
-        log_message(
-            "Ошибка обновления",
-            error=True
-        )
-        conn.rollback()
-
-# ---------------- MENU ----------------
 def interactive_menu(conn):
     while True:
         tables = get_tables(conn)
@@ -325,7 +273,6 @@ def interactive_menu(conn):
                 error=True
             )
 
-# ---------------- MAIN ----------------
 if __name__ == "__main__":
     conn = connect_db()
     interactive_menu(conn)
